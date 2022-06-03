@@ -11,8 +11,17 @@
             class="lessonetwo.Cat">
     </bean>
     <bean
+            id="idPetSetter"
+            class="lessonethri.Pig">
+    </bean>
+    <bean
             id="myPerson"
             class="lessonetwo.Persone">
         <constructor-arg ref="idPet"></constructor-arg>
+    </bean>
+    <bean
+            id="setterPerson"
+            class="lessonethri.Persone">
+        <property name="pet" ref="idPetSetter"></property>
     </bean>
 </beans>
